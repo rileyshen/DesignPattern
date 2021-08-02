@@ -15,11 +15,9 @@ package org.exe.demo.simplefac;
 //    }
 //}
 
-public class OperationAdd implements Operation{
-
-
+public class OperationMin implements Operation{
     @Override
     public double getRes(double numberA, double numberB) {
-        return numberA + numberB;
+        return numberA - numberB;
     }
 }

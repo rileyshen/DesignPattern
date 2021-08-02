@@ -1,28 +1,32 @@
 package org.exe.demo.simplefac;
 
-import org.junit.jupiter.api.Test;
+
 
 import java.util.Scanner;
 
 /**
  * @Description:
  *
+ * Factory: produce the products, static method
+ *
  * @Author RileyShen
  * @Create 2021-07-31
  */
 public class OperationFactory {
 
-    public static Operation createOper(String operate) {
-        Operation oper = null;
+    public  static Operation createOper(String operate) {
+
         switch (operate) {
             case "+":
-                oper = new OperationAdd();
-                break;
+                return new OperationAdd();
 
+            case "-":
+                return  new OperationMin();
+            // case "*"
+            default:
+                throw new RuntimeException(".......");
         }
-        return oper;
     }
-
 }
 
 //        Scanner sc = new Scanner(System.in);

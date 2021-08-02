@@ -3,40 +3,42 @@ package org.exe.demo.simplefac;
 /**
  * @Description: simplefactory
  *
- * Product:  public interface
- * version1.1 add a sqrt
+ * Product:  public interface：
+ *
+ * // use interface or abstract class:
+ *
+ * version1.2
  * design a calculator
  *
  * @Author RileyShen
  * @Create 2021-07-31
  */
-public class Operation {
 
-    private double numberA = 0;
-    private double numberB = 0;
+// use interface or abstract class:
 
-    public double getNumberA() {
-        return numberA;
-    }
+public interface Operation {
 
-    public void setNumberA(double numberA) {
-        this.numberA = numberA;
-    }
+//    public double numberA;
+//    public double numberB ;
 
-    public double getNumberB() {
-        return numberB;
-    }
 
-    public void setNumberB(double numberB) {
-        this.numberB = numberB;
-    }
+//Interfaces don't contain fields because fields represent a specific implementation of data representation,
+// and exposing them would break encapsulation.
+// Thus having an interface with a field would effectively be coding to an implementation instead of an interface,
+// which is a curious paradox for an interface to have
 
-    public double getRes() throws Exception{
-        double res = 0d;
-        return res;
-    }
+    public double getRes(double numberA, double numberB);
 
 
 
 }
+
+//public abstract class Operation {
+//
+//    public double numberA ;
+//    public double numberB ;
+//
+//
+//    public abstract double getRes() throws Exception;
+//}
 
