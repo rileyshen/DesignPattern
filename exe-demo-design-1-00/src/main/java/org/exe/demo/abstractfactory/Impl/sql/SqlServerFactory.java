@@ -8,9 +8,9 @@ import org.exe.demo.abstractfactory.Impl.IUser;
  * @Author RileyShen
  * @Create 2021-08-03
  */
-public class SqlServerFactory implements IFactory {
-    @Override
-    public IUser CreateUser() {
-        return new SqlserverUser();
-    }
-}
+//public class SqlServerFactory implements IFactory {
+//    @Override
+//    public IUser CreateUser() {
+//        return new SqlserverUser();
+//    }
+//}

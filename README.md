@@ -17,4 +17,6 @@ v1.1: add a new operation "sqrt"?
    2. Goods:   Boolean deleverGoods (DeliverReq req);
    3. gift card:  void grantToken(String phoneNumber, String cardId);
    
-4.  design a Sqlserver has a function insert user and get User by id
+4.  design a Sqlserver has a function insert user and get User by id 
+now how about you need add a department form?
+    

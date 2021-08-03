@@ -8,9 +8,10 @@ import org.exe.demo.abstractfactory.Impl.IUser;
  * @Author RileyShen
  * @Create 2021-08-03
  */
-public class AccessServiceFactory implements IFactory {
-    @Override
-    public IUser CreateUser() {
-        return new AccessServiceUser();
-    }
-}
+// no indivual factory
+//public class AccessServiceFactory implements IFactory {
+//    @Override
+//    public IUser CreateUser() {
+//        return new AccessServiceUser();
+//    }
+//}

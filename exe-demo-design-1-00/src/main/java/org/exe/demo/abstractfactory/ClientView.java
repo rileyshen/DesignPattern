@@ -1,7 +1,9 @@
 package org.exe.demo.abstractfactory;
 
+import org.exe.demo.abstractfactory.Impl.IDepartment;
 import org.exe.demo.abstractfactory.Impl.IUser;
-import org.exe.demo.abstractfactory.Impl.sql.SqlServerFactory;
+
+import org.exe.demo.abstractfactory.entiry.Department;
 import org.exe.demo.abstractfactory.entiry.User;
 
 /**
@@ -13,12 +15,21 @@ public class ClientView {
     public static void main(String[] args) {
         User user = new User();
 
-        IFactory factory = new SqlServerFactory();
+        //new code
+        Department department = new Department();
 
-        IUser iUser = factory.CreateUser();
+        IUser iUser = IFactory.CreateUser();
+
 
         iUser.insert(user);
 
         iUser.GetUser(1);
+
+        Department dept = new Department();
+
+        IDepartment iDepartment = IFactory.CreateDept();
+
+        iDepartment.insert(dept);
+        iDepartment.GetDepartment(1);
     }
 }
