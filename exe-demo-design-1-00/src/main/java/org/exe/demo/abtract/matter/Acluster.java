@@ -20,22 +20,22 @@ public class Acluster {
         private Map<String, String> dataMap = new ConcurrentHashMap<>();
 
         public String gain(String key) {
-            log.info("Redis get data key: {}", key);
+            log.info("Acluster get data key: {}", key);
             return dataMap.get(key);
         }
 
         public void set(String key, String value) {
-            log.info("Redis write data key: {}, val: {}", key, value);
+            log.info("Acluster write data key: {}, val: {}", key, value);
             dataMap.put(key, value);
         }
 
         public void setEx(String key, String value, long timeout, TimeUnit timeUnit) {
-            log.info("Redis write data key: {}, val: {} timeout: {}, timeunit: {}", key, value, timeout, timeUnit);
+            log.info("Acluster write data key: {}, val: {} timeout: {}, timeunit: {}", key, value, timeout, timeUnit);
             dataMap.put(key, value);
         }
 
         public void delete(String key) {
-            log.info("Redis delete data key: {}", key);
+            log.info("Acluster delete data key: {}", key);
             dataMap.remove(key);
         }
 

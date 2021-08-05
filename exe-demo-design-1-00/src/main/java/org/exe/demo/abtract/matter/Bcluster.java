@@ -19,22 +19,22 @@ public class Bcluster {
         private Map<String, String> dataMap = new ConcurrentHashMap<>();
 
         public String get(String key) {
-            log.info("Redis get data key: {}", key);
+            log.info("Bcluster get data key: {}", key);
             return dataMap.get(key);
         }
 
         public void set(String key, String value) {
-            log.info("Redis write data key: {}, val: {}", key, value);
+            log.info("Bcluster write data key: {}, val: {}", key, value);
             dataMap.put(key, value);
         }
 
         public void setExpire(String key, String value, long timeout, TimeUnit timeUnit) {
-            log.info("Redis write data key: {}, val: {} timeout: {}, timeunit: {}", key, value, timeout, timeUnit);
+            log.info("Bcluster write data key: {}, val: {} timeout: {}, timeunit: {}", key, value, timeout, timeUnit);
             dataMap.put(key, value);
         }
 
         public void del(String key) {
-            log.info("Redis delete data key: {}", key);
+            log.info("Bcluster delete data key: {}", key);
             dataMap.remove(key);
         }
 

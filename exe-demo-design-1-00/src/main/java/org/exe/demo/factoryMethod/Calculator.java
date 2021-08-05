@@ -19,15 +19,15 @@ public class Calculator {
         System.out.println("please enter number A");
         double numberA = sc.nextDouble();
 
-        System.out.println("please enter operator +-*/");
-        String oper = sc.next();
 
         System.out.println("please enter number B");
         double numberB = sc.nextDouble();
 
         IFactory factory = new AddFactory();
 
-        Operation res = factory.createOper();
+        Operation op = factory.createOper();
+
+        double res = op.getRes(numberA, numberB);
 
         System.out.println(res);
 
