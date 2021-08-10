@@ -19,4 +19,7 @@ v1.1: add a new operation "sqrt"?
    
 4.  design a Sqlserver has a function insert user and get User by id 
 now how about you need add a department form?
+[see more details](https://rileyshen.github.io/post/designpattern/)    
     
+
+5. Builder pattern
