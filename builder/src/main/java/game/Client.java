@@ -12,15 +12,19 @@ import game.actor.HeroBuilder;
 public class Client {
     public static void main(String[] args) {
 
+//
+//        ActorBuilder actorBuilder = new HeroBuilder();
+//
+//        ActorController actorController = new ActorController();
+//
+//        Actor construct = actorController.construct(actorBuilder);
+//
+//        System.out.println(construct); // Actor(type=Hero, sex=female, face=aa, costume=aacostume, hairstyle=aahairstyle)
 
-        ActorBuilder actorBuilder = new HeroBuilder();
 
-        ActorController actorController = new ActorController();
+        Actor actor = ActorBuilder.construct(new HeroBuilder());
 
-        Actor construct = actorController.construct(actorBuilder);
-
-        System.out.println(construct); // Actor(type=Hero, sex=female, face=aa, costume=aacostume, hairstyle=aahairstyle)
-
+        System.out.println(actor); // Actor(type=Hero, sex=female, face=aa, costume=aacostume, hairstyle=aahairstyle)
 
     }
 }
