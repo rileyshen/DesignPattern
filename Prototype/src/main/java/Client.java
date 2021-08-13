@@ -11,6 +11,10 @@ public class Client {
         log.setDate("week 12");
         log.setName("big A");
 
+        // shallowClone
+        Attachement attachement = new Attachement();
+        log.setAttachement(attachement);
+
         System.out.println("name: " + log.getName());
         System.out.println("week: " + log.getDate());
         System.out.println("content: " + log.getContent());
@@ -30,6 +34,6 @@ public class Client {
         System.out.println(log == log2);
         System.out.println(log.getDate() == log2.getName());
         System.out.println(log.getContent() == log2.getContent() );
-
+        System.out.println(log.getAttachement() == log2.getAttachement() ); // true : // shallowClone: int、double、byte、boolean、char
     }
 }

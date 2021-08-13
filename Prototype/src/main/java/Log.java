@@ -8,10 +8,19 @@ public class Log implements Cloneable{
     private String date;
     private String content;
 
+    // shallowClone
+    private Attachement attachement;
+    // shallowClone
+    public void setAttachement(Attachement attachement) {
+        this.attachement = attachement;
+    }
     public String getName() {
         return name;
     }
-
+    // shallowClone
+    public Attachement getAttachement() {
+        return this.attachement;
+    }
     public void setName(String name) {
         this.name = name;
     }
