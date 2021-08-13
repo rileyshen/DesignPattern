@@ -25,3 +25,14 @@ now how about you need add a department form?
 5. Builder pattern
 
 6. Prototype pattern
+   shallowClone
+   deepClone:
+   //Serialization : put object into stream
+   ByteArrayOutputStream bao = new ByteArrayOutputStream();
+   ObjectOutputStream oos = new ObjectOutputStream(bao);
+   oos.writeObject(this);
+
+        // read object from strom
+        ByteArrayInputStream bis = new ByteArrayInputStream(bao.toByteArray());
+        ObjectInputStream ois = new ObjectInputStream(bis);
+        return (Log)ois.readObject();

@@ -1,9 +1,11 @@
+import java.io.*;
+
 /**
  * @Description:
  * @Author RileyShen
  * @Create 2021-08-13
  */
-public class Log implements Cloneable{
+public class Log implements Serializable {
     private String name;
     private String date;
     private String content;
@@ -41,17 +43,17 @@ public class Log implements Cloneable{
         this.content = content;
     }
 
-    public Log clone() {
+    // deepClone
+    public Log deepClone() throws IOException, ClassNotFoundException, OptionalDataException {
 
+        //Serialization : put object into stream
+        ByteArrayOutputStream bao = new ByteArrayOutputStream();
+        ObjectOutputStream oos = new ObjectOutputStream(bao);
+        oos.writeObject(this);
 
-        try {
-
-            return (Log)super.clone();
-
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-
-        }
-        return null;
+        // read object from strom
+        ByteArrayInputStream bis = new ByteArrayInputStream(bao.toByteArray());
+        ObjectInputStream ois = new ObjectInputStream(bis);
+        return (Log)ois.readObject();
     }
 }

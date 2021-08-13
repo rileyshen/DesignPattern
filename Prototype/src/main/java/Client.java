@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 /**
  * @Description:
  * @Author RileyShen
@@ -19,7 +21,14 @@ public class Client {
         System.out.println("week: " + log.getDate());
         System.out.println("content: " + log.getContent());
 
-        Log log2 = log.clone();
+        Log  log2 = new Log();
+        try {
+           log2 = log.deepClone();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
 
         log2.setContent("bb");
