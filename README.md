@@ -23,3 +23,5 @@ now how about you need add a department form?
     
 
 5. Builder pattern
+
+6. Prototype pattern

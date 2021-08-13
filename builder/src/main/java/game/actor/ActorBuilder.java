@@ -1,7 +1,7 @@
 package game.actor;
 
 /**
- * @Description:
+ * @Description: game 1.3: (HookMethod
  * @Author RileyShen
  * @Create 2021-08-11
  */
@@ -25,6 +25,7 @@ package game.actor;
 //}
 
 // combine ActorBuilder and ActorController
+   // (HookMethod
 
 public abstract class ActorBuilder {
    protected static Actor actor = new Actor();
@@ -39,6 +40,10 @@ public abstract class ActorBuilder {
 
     public abstract void buildHairstyle();
 
+    // hooked method
+    public boolean isBareHeaded() {
+        return false;
+    }
 //    public Actor ActorCreate() {
 //        return actor;
 //    }
@@ -50,7 +55,11 @@ public abstract class ActorBuilder {
             ab.buildCostume();
             ab.buildFace();
             ab.buildSex();
-            ab.buildHairstyle();
+// hooked method
+            if (!ab.isBareHeaded()) {
+                ab.buildHairstyle();
+            }
+
 
 
             return actor;
@@ -59,3 +68,6 @@ public abstract class ActorBuilder {
 
 
 }
+
+//builder pattern的实现核心在于每个method都返回builder object 本身。
+// 然后chain起来给builder object赋值，最后利用build method返回需要使用的object。

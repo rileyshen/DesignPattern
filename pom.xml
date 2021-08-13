@@ -16,6 +16,7 @@
     <modules>
     <module>exe-demo-design-1-00</module>
         <module>builder</module>
+        <module>Prototype</module>
         <!--    <module>itstack-demo-design-1-00</module>-->
 <!--        <module>itstack-demo-design-2-00</module>-->
 <!--        <module>itstack-demo-design-2-01</module>-->

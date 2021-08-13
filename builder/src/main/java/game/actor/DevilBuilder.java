@@ -30,4 +30,10 @@ public class DevilBuilder extends ActorBuilder{
     public void buildHairstyle() {
         actor.setHairstyle("cchairstyle");
     }
+
+    // hooked method
+    public boolean isBareHeaded() {
+        return true;
+    }
+//
 }
