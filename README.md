@@ -36,3 +36,7 @@ now how about you need add a department form?
         ByteArrayInputStream bis = new ByteArrayInputStream(bao.toByteArray());
         ObjectInputStream ois = new ObjectInputStream(bis);
         return (Log)ois.readObject();
+
+Prototype Manager： store those objects in a set
+
+use Prototype design an item banking, create Multiple choice question, Q & A,

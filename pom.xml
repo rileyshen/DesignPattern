@@ -17,37 +17,7 @@
     <module>exe-demo-design-1-00</module>
         <module>builder</module>
         <module>Prototype</module>
-        <!--    <module>itstack-demo-design-1-00</module>-->
-<!--        <module>itstack-demo-design-2-00</module>-->
-<!--        <module>itstack-demo-design-2-01</module>-->
-<!--        <module>itstack-demo-design-3-00</module>-->
-<!--        <module>itstack-demo-design-3-01</module>-->
-<!--        <module>tstack-demo-design-4-00</module>-->
-<!--        <module>tstack-demo-design-4-01</module>-->
-<!--        <module>tstack-demo-design-5-00</module>-->
-<!--        <module>tstack-demo-design-5-01</module>-->
-<!--        <module>tstack-demo-design-7-00</module>-->
-<!--        <module>tstack-demo-design-8-01</module>-->
-<!--        <module>tstack-demo-design-9-00</module>-->
-<!--        <module>tstack-demo-design-9-01</module>-->
-<!--        <module>tstack-demo-design-10-00</module>-->
-<!--        <module>itstack-demo-design-11-01</module>-->
-<!--        <module>itstack-demo-design-11-02</module>-->
-<!--        <module>itstack-demo-design-12</module>-->
-<!--        <module>itstack-demo-design-13</module>-->
-<!--        <module>itstack-demo-design-12-01</module>-->
-<!--        <module>itstack-demo-design-14-00</module>-->
-<!--        <module>itstack-demo-design-15-00</module>-->
-<!--        <module>itstack-demo-design-16-00</module>-->
-<!--        <module>itstack-demo-design-16-01</module>-->
-<!--        <module>itstack-demo-design-17-00</module>-->
-<!--        <module>itstack-demo-design-18-00</module>-->
-<!--        <module>itstack-demo-design-18-01</module>-->
-<!--        <module>itstack-demo-design-19-00</module>-->
-<!--        <module>itstack-demo-design-19-01</module>-->
-<!--        <module>itstack-demo-design-20-01</module>-->
-<!--        <module>itstack-demo-design-21-00</module>-->
-<!--        <module>itstack-demo-design-22-00</module>-->
+
     </modules>
 
     <dependencies>
