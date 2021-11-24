@@ -19,11 +19,16 @@ v1.1: add a new operation "sqrt"?
    
 4.  design a Sqlserver has a function insert user and get User by id 
 now how about you need add a department form?
-[see more details](https://rileyshen.github.io/post/designpattern/)    
+[see more details](https://rileyshen.github.io/post/designpattern1/)    
     
 
-5. Builder pattern
-
+5. Builder pattern:  
+   5. 1 DecorationPackage (https://github.com/rileyshen/DesignPattern/tree/main/builder/src/main/java/apartdeco)
+        different combination of ceiling, floor, tile deco levels
+   5. 2 fast food ordering system  (https://github.com/rileyshen/DesignPattern/tree/main/builder/src/main/java/faststore)
+      [see more details](https://rileyshen.github.io/post/designpattern2/)
+      
+   5.3 game actors  (https://github.com/rileyshen/DesignPattern/tree/main/builder/src/main/java/game)
 6. Prototype pattern
    shallowClone
    deepClone:
